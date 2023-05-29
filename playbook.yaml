@@ -1,0 +1,12 @@
+- name: "Manage Jenkins and Ansible"
+  hosts: all
+  become: true
+  tasks:
+   - name: "ensure Deepthi user exists"
+     user:
+       name: Deepthi
+       state: absent
+    - name: "ensure Alex user exists"
+     user:
+       name: Alex
+       state: absent
